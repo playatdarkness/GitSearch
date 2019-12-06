@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="5dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/header_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Username"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#2ebc4f"
+        android:textSize="30dp"
+        android:layout_below="@+id/user_image"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_below="@+id/header_username"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/header_profile_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="25dp"
+        android:layout_above="@id/profile_link"
+        android:layout_marginBottom="5dp"
+        android:textColor="#2ebc4f"
+        android:text="Github Profile Link"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/profile_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

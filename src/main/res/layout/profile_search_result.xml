@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/profile_resultContainer">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        tools:showIn="@layout/profile_search_result"
+        tools:context=".controller.ProfileSearchResult"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disconnected"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="No internet connection, Please make sure your device is connected to the internet"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
